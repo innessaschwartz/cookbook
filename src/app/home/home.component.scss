@@ -1,0 +1,25 @@
+.hero-header {
+	background-image: url("../../assets/cooking-hero.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+	& .title {
+		text-align: center;
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+}
+.section2 {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	.title-login {
+		font-size: 30px;
+		text-align: center;
+	}
+	.login {
+		text-align: center;
+	}
+	input {
+
+	}
+}
