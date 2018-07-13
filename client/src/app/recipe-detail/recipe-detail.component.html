@@ -1,0 +1,45 @@
+<div class="container-fluid my-recipes my-recipes-header">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="title">All Recipes</h1>
+			<p class="sub-title">What will you create today?</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div *ngIf="recipe">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label >Name</label>
+					<input class="form-control" [(ngModel)]="recipe.name" name="name">
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label>Type</label>
+					<input class="form-control" [(ngModel)]="recipe.type" name="type">
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label>Cook Time</label>
+					<input class="form-control" [(ngModel)]="recipe.time" name="time">
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label>Description</label>
+					<input class="form-control" [(ngModel)]="recipe.description" name="desc">
+				</div>
+			</div>
+		</div>
+		<div class="actions">
+			<button class="btn btn-primary" (click)="save()">Save</button>
+		</div>
+	</div>
+</div>

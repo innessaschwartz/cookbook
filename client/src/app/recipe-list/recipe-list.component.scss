@@ -1,0 +1,31 @@
+.my-recipes {
+	height: 200px;
+	// background-color: #DEB887;
+	background-image: url("../../assets/Cooking_Background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	.title {
+		text-align: center;
+		font-weight: bold;
+		color: maroon;
+	}
+	.sub-title {
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		color: maroon;
+	}
+}
+.container-fluid {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.no-data {
+	text-align: center;
+}
+.btn-info {
+	border-radius: 20px;
+	background-color: maroon;
+
+}

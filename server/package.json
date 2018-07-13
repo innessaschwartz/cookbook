@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ts-node -- ./src/cookBook.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/console-stamp": "^0.2.31",
+    "@types/express": "^4.11.1",
+    "@types/mongoose": "^5.0.15",
+    "@types/node": "^10.3.0",
+    "console-stamp": "^0.2.6",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.3"
+  }
+}

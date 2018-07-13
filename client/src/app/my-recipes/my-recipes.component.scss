@@ -1,0 +1,23 @@
+.my-recipes {
+	height: 200px;
+	// background-color: #DEB887;
+	background-image: url("../../assets/veggies.jpg");
+	// background-position: center;
+	// background-repeat: no-repeat;
+	padding-top: 50px;
+	.title {
+		text-align: center;
+		font-weight: bold;
+		color: white;
+	}
+	.sub-title {
+		text-align: center;
+		font-size: 30px;
+		font-weight: 500;
+		color: white;
+	}
+}
+.container-fluid {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}

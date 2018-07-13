@@ -1,0 +1,33 @@
+<div class="container-fluid my-recipes my-recipes-header">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="title">All Recipes</h1>
+			<p class="sub-title">You got this.</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<table class="table table-hover">
+				<thead class="thead-light">
+					<tr>
+						<th>Total Time</th>
+						<th>Recipe</th>
+						<th>Recipe Type</th>
+						<th><button class="add btn btn-info" (click)="addRecipe()">Add</button></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let recipe of recipes" [routerLink]="['/my-recipes',recipe._id]">
+						<td>{{recipe.time}}</td>
+						<td>{{recipe.name}}</td>
+						<td>{{recipe.type}}</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="no-data" *ngIf="!recipes || !recipes.length">No Recipes</p>
+		</div>
+	</div>
+</div>
