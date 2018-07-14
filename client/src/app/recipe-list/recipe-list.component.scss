@@ -2,13 +2,20 @@
 	background-image: url("../../assets/Cooking_Background.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	.sub-title {
+	.title {
 		text-align: center;
 		font-size: 28px;
 		font-weight: bold;
 		color: black;
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-top: 80px;
+	}
+	.sub-title {
+		text-align: center;
+		font-size: 13px;
+		font-weight: bold;
+		color: black;
+		// padding-top: 10px;
+		padding-bottom: 80px;
 	}
 }
 .container-fluid {
