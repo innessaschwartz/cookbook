@@ -17,6 +17,7 @@
 						<th>Total Time</th>
 						<th>Recipe</th>
 						<th>Recipe Type</th>
+						<th>Favorite</th>
 						<th><button class="add btn btn-info" (click)="addRecipe()">Add</button></th>
 					</tr>
 				</thead>
@@ -25,6 +26,7 @@
 						<td>{{recipe.time}}</td>
 						<td>{{recipe.name}}</td>
 						<td>{{recipe.type}}</td>
+						<td>{{recipe.favorite ? 'Yes' : 'No'}}</td>
 						<td></td>
 					</tr>
 				</tbody>
