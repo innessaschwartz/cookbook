@@ -55,7 +55,8 @@
 			</div>
 		</div>
 		<div class="actions">
-			<button class="btn btn-primary" (click)="save()">Save</button>
+			<button class="save btn btn-primary" (click)="save()">Save</button>
+			<button *ngIf="recipe._id" class="delete btn btn-danger" (click)="delete()">Delete</button>
 		</div>
 	</div>
 </div>

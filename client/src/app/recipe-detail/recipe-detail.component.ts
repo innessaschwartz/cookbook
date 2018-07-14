@@ -13,7 +13,7 @@ import { Recipe } from '../models';
 	styleUrls: ['./recipe-detail.component.scss']
 })
 export class RecipeDetailComponent {
-	recipe:Recipe;
+	recipe:any;
 	constructor(private api:ApiService, private router:Router, private route:ActivatedRoute, private alerts: AlertsService) {
 		var recipeId = this.route.snapshot.paramMap.get('recipeId');
 		console.log('recipeId: %o', recipeId);
@@ -34,6 +34,13 @@ export class RecipeDetailComponent {
 
 	unFavorite() {
 		this.recipe.favorite = false;
+	}
+
+	delete() {
+		this.recipe.delete = true;
+		this.api.saveRecipe(this.recipe);
+		this.alerts.setMessage('Recipe delete!','success');
+		this.router.navigate(['my-recipes']);
 	}
 
 	save() {
