@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NgModule } from '@angular/core';
-// import { BootstrapAlertModule } from 'ngx-bootstrap-alert-service';
+import { AlertsModule } from 'angular-alert-module';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -46,7 +46,7 @@ const routes: Routes = [
 		HttpClientModule,
 		FormsModule,
 		RouterModule.forRoot(routes),
-		// BootstrapAlertModule
+		AlertsModule.forRoot()
 	],
 	providers: [ApiService],
 	bootstrap: [AppComponent]

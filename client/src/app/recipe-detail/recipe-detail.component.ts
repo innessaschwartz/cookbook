@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
+import { AlertsService } from 'angular-alert-module';
+
 import { ApiService } from '../services/api.service';
 
 import { Recipe } from '../models';
@@ -12,7 +14,7 @@ import { Recipe } from '../models';
 })
 export class RecipeDetailComponent {
 	recipe:Recipe;
-	constructor(private api:ApiService, private router:Router, private route:ActivatedRoute) {
+	constructor(private api:ApiService, private router:Router, private route:ActivatedRoute, private alerts: AlertsService) {
 		var recipeId = this.route.snapshot.paramMap.get('recipeId');
 		console.log('recipeId: %o', recipeId);
 		if(recipeId==='new') {
@@ -35,7 +37,9 @@ export class RecipeDetailComponent {
 	}
 
 	save() {
+		this.alerts.setMessage('Recipe saved!','success');
 		this.api.saveRecipe(this.recipe);
+		this.router.navigate(['my-recipes']);
 	}
 
 }

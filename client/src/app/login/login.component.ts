@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-// import { BootstrapAlertService } from 'ngx-bootstrap-alert-service';
+import { AlertsService } from 'angular-alert-module';
 
 @Component({
 	selector: 'app-login',
@@ -8,11 +8,12 @@ import { Router, ActivatedRoute } from '@angular/router';
 	styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-	// ,private bootstrapAlertService: BootstrapAlertService
-	constructor(private router:Router) {}
+	constructor(private router:Router, private alerts: AlertsService) {
+		// this.alerts.setDefaults('timeout',0);
+	}
 
 	login() {
-		// this.bootstrapAlertService.showSucccess('This is a success message!');
+		this.alerts.setMessage('Successfully logged in!','success');
 		this.router.navigate(['my-recipes']);
 	}
 
