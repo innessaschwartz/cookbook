@@ -9,7 +9,8 @@ export interface RecipeObject {
 	time: string,
 	description: string,
 	imgs: string,
-	comments: string
+	comments: string,
+	favorite: boolean
 };
 
 const schema = new mongoose.Schema({
@@ -18,7 +19,8 @@ const schema = new mongoose.Schema({
 	time: String,
 	description: String,
 	imgs: String,
-	comments: String
+	comments: String,
+	favorite: Boolean
 }, {
 	minimize: false,
 	toJSON:   {virtuals:true},
