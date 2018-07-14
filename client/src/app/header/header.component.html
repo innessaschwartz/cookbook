@@ -8,15 +8,15 @@
 			<li class="nav-item active">
 				<a [routerLink]="''"class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
+			<!-- <li class="nav-item active">
 				<a class="nav-link" [routerLink]="'my-recipes'" href="#">Recipes<span class="sr-only">(current)</span></a>
-			</li>
+			</li> -->
 			<li class="nav-item active dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Recipes
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">All Recipes</a>
+					<a class="dropdown-item" nav-item active [routerLink]="'my-recipes'">All Recipes</a>
 					<a class="dropdown-item" href="#">Favorites</a>
 					<a class="dropdown-item" href="#">Import</a>
 				</div>
@@ -24,7 +24,7 @@
 		</ul>
 		<ul class="navbar-nav position-right">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Login</a>
+				<a class="nav-link" routerLink="/login">Login</a>
 			</li>
 			<li class="nav-item active">
 				<a class="nav-link" href="#">Sign Up</a>

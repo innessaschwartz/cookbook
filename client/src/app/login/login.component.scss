@@ -1,0 +1,24 @@
+.container-fluid{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background-image: url("../../assets/plank.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	.title-login {
+		font-size: 30px;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.login {
+		text-align: center;
+	}
+	input {
+
+	}
+	.btn-success{
+		// border-radius: 20px;
+		background-color: maroon;
+		border: maroon;
+	}
+}

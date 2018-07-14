@@ -12,7 +12,6 @@
 			<table class="table table-hover">
 				<thead class="thead-light">
 					<tr class="text-center">
-						<!-- <th></th> -->
 						<th>Total Time</th>
 						<th>Recipe</th>
 						<th>Recipe Type</th>
@@ -21,7 +20,6 @@
 				</thead>
 				<tbody>
 					<tr *ngFor="let recipe of recipes" [routerLink]="['/my-recipes',recipe._id]">
-						<!-- <td></td> -->
 						<td>{{recipe.time}}</td>
 						<td>{{recipe.name}}</td>
 						<td>{{recipe.type}}</td>

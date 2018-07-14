@@ -9,32 +9,40 @@
 <div class="container-fluid padding">
 	<div *ngIf="recipe">
 		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label >Name</label>
-					<input class="form-control" [(ngModel)]="recipe.name" name="name">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label>Name</label>
+							<input class="form-control" [(ngModel)]="recipe.name" name="name">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label>Type</label>
+							<input class="form-control" [(ngModel)]="recipe.type" name="type">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label>Cook Time</label>
+							<input class="form-control" [(ngModel)]="recipe.time" name="time">
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label>Type</label>
-					<input class="form-control" [(ngModel)]="recipe.type" name="type">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label>Cook Time</label>
-					<input class="form-control" [(ngModel)]="recipe.time" name="time">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label>Description</label>
-					<input class="form-control" [(ngModel)]="recipe.description" name="desc">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label>Description</label>
+							<textarea class="form-control" [(ngModel)]="recipe.description" name="desc" rows="8"></textarea>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
