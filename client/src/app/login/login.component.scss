@@ -5,16 +5,18 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	.title-login {
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.main-login {
 		font-size: 30px;
 		text-align: center;
-		padding-top: 30px;
 		padding-bottom: 30px;
+		font-weight: bold;
 	}
 	.login {
 		text-align: center;
-	}
-	input {
-
 	}
 	.btn-success{
 		// border-radius: 20px;
