@@ -13,7 +13,7 @@ export class LoginComponent {
 
 	login() {
 		// this.bootstrapAlertService.showSucccess('This is a success message!');
-		this.router.navigate(['']);
+		this.router.navigate(['my-recipes']);
 	}
 
 }

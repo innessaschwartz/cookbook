@@ -18,7 +18,7 @@ import { ApiService } from './services/api.service';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-	{path:'', component:HomeComponent},
+	{path:'', component:RecipeListComponent},
 	{path:'login', component:LoginComponent},
 	{path:'my-recipes', component:RecipeListComponent},
 	{path:'my-recipes/:recipeId', component:RecipeDetailComponent}
