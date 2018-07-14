@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -32,6 +33,7 @@ const routes: Routes = [
 	],
 	imports: [
 		BrowserModule,
+		BsDropdownModule.forRoot(),
 		HttpClientModule,
 		FormsModule,
 		RouterModule.forRoot(routes),

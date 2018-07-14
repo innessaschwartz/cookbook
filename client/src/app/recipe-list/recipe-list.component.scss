@@ -8,13 +8,13 @@
 	.title {
 		text-align: center;
 		font-weight: bold;
-		color: maroon;
+		color: black;
 	}
 	.sub-title {
 		text-align: center;
 		font-size: 25px;
 		font-weight: bold;
-		color: maroon;
+		color: black;
 	}
 }
 .container-fluid {
@@ -27,5 +27,6 @@
 .btn-info {
 	border-radius: 20px;
 	background-color: maroon;
+	border: maroon;
 
 }
