@@ -12,6 +12,15 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="form-group">
+							<label>Favorite</label>
+							<i class="star far fa-star" *ngIf="!recipe.favorite" (click)="favorite()"></i>
+							<i class="star fas fa-star" *ngIf="recipe.favorite" (click)="unFavorite()"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
 							<label>Name</label>
 							<input class="form-control" [(ngModel)]="recipe.name" name="name">
 						</div>
@@ -39,7 +48,7 @@
 					<div class="col-sm-12">
 						<div class="form-group">
 							<label>Description</label>
-							<textarea class="form-control" [(ngModel)]="recipe.description" name="desc" rows="8"></textarea>
+							<textarea class="form-control" [(ngModel)]="recipe.description" name="desc" rows="11"></textarea>
 						</div>
 					</div>
 				</div>

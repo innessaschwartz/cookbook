@@ -26,6 +26,14 @@ export class RecipeDetailComponent {
 		}
 	}
 
+	favorite() {
+		this.recipe.favorite = true;
+	}
+
+	unFavorite() {
+		this.recipe.favorite = false;
+	}
+
 	save() {
 		this.api.saveRecipe(this.recipe);
 	}
