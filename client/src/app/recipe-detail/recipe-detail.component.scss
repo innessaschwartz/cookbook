@@ -1,20 +1,17 @@
 .my-recipes {
-	height: 200px;
+	// height: 400px;
 	// background-color: #DEB887;
-	background-image: url("../../assets/Cooking_Background.jpg");
-	// background-position: center;
-	// background-repeat: no-repeat;
-	padding-top: 50px;
-	.title {
-		text-align: center;
-		font-weight: bold;
-		color: white;
-	}
+	background-image: url("../../assets/veggies-cook.jpg");
+	background-position: top;
+	background-repeat: repeat;
 	.sub-title {
+		padding-top: 80px;
+		padding-bottom: 80px;
 		text-align: center;
 		font-size: 30px;
-		font-weight: 500;
-		color: white;
+		font-weight: bold;
+		color: black;
+		padding-right: 30px;
 	}
 }
 .container-fluid {
